@@ -1,0 +1,66 @@
+#game {
+    width: 512px;
+    height: 311px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 5px;
+    background-image: url("beach.png");
+}
+#timer {
+    position: absolute;
+    width: 20;
+    height: auto;
+    left: 50%;
+    top: -10px;
+    color: #454545;
+    font-family: 'VT323', monospace;
+}
+.column {
+    position: absolute;
+    overflow: hidden;
+    width: 33.33%;
+    float: left;
+    padding: 5px;
+    top: 10px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#heart1 {
+    width: 18.61px;
+    height: 18.61px;
+}
+#heart2 {
+    width: 18.61px;
+    height: 18.61px;
+}
+#heart3 {
+    width: 18.61px;
+    height: 18.61px;
+}
+
+#character {
+    width: 100px;
+    height: auto;
+    position: relative;
+    top: 200px;
+    left: 190px;
+    z-index: 10;
+}
+#flamingo {
+    width: 100%;
+}
+.fire {
+    width: 20px;
+    height: auto;
+    position: relative;
+/*    bottom: 100px;*/
+    top: 0px;
+/*    left: 190px;*/
+    margin: -20px;
+/*    z-index: 10;*/
+}
+
