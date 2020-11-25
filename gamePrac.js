@@ -100,7 +100,6 @@ setInterval(function() {
                     if (fireBall.getAttribute("src") == "fish.png") {
                         if (livesCounter <= 2) {
                             livesCounter++;
-                            console.log("merp fishy");
                         }
                     } else {
                         livesCounter--;
