@@ -121,7 +121,7 @@ setInterval(function() {
                         document.getElementById("heart1").style.opacity = 0;
                         document.getElementById("heart2").style.opacity = 0;
                         document.getElementById("heart3").style.opacity = 0;
-                        alert("You loose! You lasted " + seconds + " seconds!");
+                        alert("You lose! You lasted " + seconds + " seconds!");
                     }
                 }
                 
@@ -153,7 +153,7 @@ setInterval(function() {
                         document.getElementById("heart1").style.opacity = 0;
                         document.getElementById("heart2").style.opacity = 0;
                         document.getElementById("heart3").style.opacity = 0;
-                        alert("You loose! You lasted " + seconds + " seconds!");
+                        alert("You lose! You lasted " + seconds + " seconds!");
                     }
                 }
             }
