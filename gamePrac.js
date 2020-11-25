@@ -133,8 +133,6 @@ setInterval(function() {
                     if (fireBall.getAttribute("src") == "fish.png") {
                         if (livesCounter <= 2) {
                             livesCounter++;
-                            console.log("merp fishy");
-                            console.log(livesCounter);
                         }
                     } else {
                         livesCounter--;
@@ -156,7 +154,7 @@ setInterval(function() {
                         document.getElementById("heart1").style.opacity = 0;
                         document.getElementById("heart2").style.opacity = 0;
                         document.getElementById("heart3").style.opacity = 0;
-                        alert("You loose");
+                        alert("You loose! You lasted " + seconds + " seconds!");
                     }
                 }
             }
