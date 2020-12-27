@@ -28,12 +28,12 @@ function startGame () {
     speaker.addEventListener("click", pauseMusic);
     function pauseMusic () {
         mouseSound.play();
-        if (speaker.getAttribute("src") == "soundOn.png") {
+        if (speaker.getAttribute("src") == "graphics/soundOn.png") {
             music.pause();
-            speaker.setAttribute("src", "soundOff.png");
-        } else if (speaker.getAttribute("src") == "soundOff.png") {
+            speaker.setAttribute("src", "graphics/soundOff.png");
+        } else if (speaker.getAttribute("src") == "graphics/soundOff.png") {
             music.play();
-            speaker.setAttribute("src", "soundOn.png");
+            speaker.setAttribute("src", "graphics/soundOn.png");
         }
     }
     character.style.left ="215px";
@@ -63,14 +63,14 @@ function startGame () {
     function moveLeft() {
         var left = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
         if (left > -5) {
-            document.getElementById("flamingo").setAttribute("src", "flamingo.png");
+            document.getElementById("flamingo").setAttribute("src", "graphics/flamingo.png");
             character.style.left = left - 2 + "px";
         }
     }
     function moveRight() {
         var left = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
         if (left < 405) {
-            document.getElementById("flamingo").setAttribute("src", "flamingoFaceRight.png");
+            document.getElementById("flamingo").setAttribute("src", "graphics/flamingoFaceRight.png");
             character.style.left = left + 2 + "px";
         }
     }
@@ -121,7 +121,7 @@ function startGame () {
             var lastFireCreated = document.getElementById("fire"+(count-1));
             if (parseFloat(window.getComputedStyle(lastFireCreated).getPropertyValue("top")) - 80 > -100) {
                 var fire = document.createElement("img");
-                fire.setAttribute("src", "fireball.png");
+                fire.setAttribute("src", "graphics/fireball.png");
                 fire.setAttribute("class", "fire");
                 fire.setAttribute("id", "fire"+count);
                 game.appendChild(fire);
@@ -131,12 +131,12 @@ function startGame () {
                 flameArr.push(count);
                 count++;
                 if (count%20 == 0) {
-                    fire.setAttribute("src", "fish.png");
+                    fire.setAttribute("src", "graphics/fish.png");
                 }
             }
         } else {
             var fire = document.createElement("img");
-            fire.setAttribute("src", "fireball.png");
+            fire.setAttribute("src", "graphics/fireball.png");
             fire.setAttribute("class", "fire");
             fire.setAttribute("id", "fire"+count);
             game.appendChild(fire);
@@ -169,7 +169,7 @@ function startGame () {
                     if (((leftOfFire) >= characterLeft) && (leftOfFire < (characterLeft + 53))) {
                         flameArr.shift();
                         fireBall.remove();
-                        if (fireBall.getAttribute("src") == "fish.png") {
+                        if (fireBall.getAttribute("src") == "graphics/fish.png") {
                             if (livesCounter <= 2) {
                                 fishSound.play();
                                 livesCounter++;
@@ -184,7 +184,7 @@ function startGame () {
                     if (((leftOfFire) >= characterLeft) && (leftOfFire < (characterLeft + 68))) {
                         flameArr.shift();
                         fireBall.remove();
-                        if (fireBall.getAttribute("src") == "fish.png") {
+                        if (fireBall.getAttribute("src") == "graphics/fish.png") {
                             if (livesCounter <= 2) {
                                 fishSound.play();
                                 livesCounter++;
