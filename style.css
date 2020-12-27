@@ -4,7 +4,7 @@
     border: 1px solid black;
     margin: auto;
     margin-top: 5px;
-    background-image: url("beach.png");
+    background-image: url("graphics/beach.png");
 }
 #timer {
     position: absolute;
