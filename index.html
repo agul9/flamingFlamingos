@@ -8,19 +8,43 @@
 <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     </head>
     <body>
+<!--    background music from soundimage.com-->
+    <audio id="music"><source src="music.mp3" /></audio>
+<!--    all sound effects from mixkit.co-->
+<!--    arcade game jump coin-->
+    <audio id="fishSound"><source src="gainPoint.wav" /></audio>
+<!--    quick lock sound-->
+    <audio id="fireSound"><source src="losePoint.wav" /></audio>
+<!--    mouse click close-->
+    <audio id="mouseSound"><source src="mouseClick.wav" /></audio>
     <div id = "game">
-        <h1 id = "timer">0</h1>
         <div class = "row">
             <div class = "column">
+                <h1 id = "timer">0</h1>
                 <img id = "heart1" src="heart.png" alt="image">
                 <img id = "heart2" src="heart.png" alt="image">
                 <img id = "heart3" src="heart.png" alt="image">
+                <img id = "speaker" src = "soundOn.png" alt = "image">
+                <!--Speaker by Dileep M from the Noun Project-->
+                <!--for off: https://thenounproject.com/term/speaker/170038/-->
+                <!--for on: https://thenounproject.com/search/?q=speaker+pixel&i=170040-->
+                <!--no changes were made-->
             </div>
         </div>
+        <div class = "home">
+            <h1 id = "welcome">Welcome!</h1>
+            <h2 id = "instruc">Dodge the fireballs<br/>and collect the fish to gain lives!<br/>Press space to restart</h2>
+            <button id = "start">START</button>
+        </div>
+        <h2 id = "lost">you lose</h2>
         <div id = "character">
             <img id = "flamingo" src = "flamingo.png" alt="image">
         </div>
         </div>
     </body>
+    <footer class = "footer">
+        <p id = "musicTag">Music by Eric Matyas | www.soundimage.org</p>
+        <p id = "copyright">© 2020 The Flaming Flamingos. All Rights Reserved.</p>
+    </footer>
     <script src = "gamePrac.js"></script>
 </html>
