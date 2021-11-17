@@ -1,4 +1,4 @@
-# flamingflamingos
+# The Flaming Flamingos
 Help keep our flamingo safe by avoiding the fireballs!
 1. Use the arrow keys to move left and right
 2. Collect the fish to gain a life (can have up to three lives at a time)
